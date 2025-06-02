@@ -63,6 +63,16 @@ Por defecto está configurado para usar un token de tipo Embed.
 ## Reporte
 ![Reporte de Power BI](./assets/Screenshot%202025-06-02%20at%2011.46.11 AM.png)
 
+## Notas
+Para este ejemplo se ha descargado manualmente la biblioteca `powerbi.min.js` desde el repositorio de github de Power BI. Puedes descargarla desde [Power BI JavaScript](https://github.com/microsoft/PowerBI-JavaScript/blob/master/dist/powerbi.min.js).
+Adicionalmente, podemos usar un CDN para incluir la biblioteca en tu proyecto. por ejemplo:
+```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/powerbi-client/2.23.7/powerbi.min.js" integrity="sha512-G1itlxVSa8Uac0wTFJo/zXYU5dvAtZwMDwkUXvwCeBTmyWRkCkv4xv2PeC1RsL1etmlrTt8P/VACANB2eFCtcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+```
+
 ## Referencias
 - [Documentación de Power BI REST API](https://learn.microsoft.com/en-us/rest/api/power-bi/)
 - [Power BI Playground](https://playground.powerbi.com/)
+- [Embed Power BI in react](https://www.youtube.com/watch?v=A5KFY5Jh1Uc)
+- [Power BI React Docs](https://github.com/microsoft/powerbi-client-react)
+- [Power BI Microsoft Examples](https://github.com/microsoft/PowerBI-Developer-Samples)
