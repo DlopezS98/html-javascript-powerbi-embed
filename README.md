@@ -70,6 +70,13 @@ Adicionalmente, podemos usar un CDN para incluir la biblioteca en tu proyecto. p
 <script src="https://cdnjs.cloudflare.com/ajax/libs/powerbi-client/2.23.7/powerbi.min.js" integrity="sha512-G1itlxVSa8Uac0wTFJo/zXYU5dvAtZwMDwkUXvwCeBTmyWRkCkv4xv2PeC1RsL1etmlrTt8P/VACANB2eFCtcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 ```
 
+## Consideraciones finales
+- Asegúrate de que tu reporte esté publicado y accesible desde el workspace que estás utilizando.
+- Revisa los permisos de acceso al reporte y al workspace.
+- Si usas un token de tipo Embed, asegúrate de que tu aplicación esté configurada para manejar la autenticación y autorización adecuadamente.
+- Este ejemplo es básico y está destinado a propósitos de demostración. Para aplicaciones en producción, considera implementar un manejo de errores adecuado y una mejor gestión de tokens.
+- La duración del embed token es de 1 hora, por lo que tendrás que regenerarlo periódicamente si tu aplicación está en producción. Para esto puedes implementar un mecanismo que lo renueve automáticamente usando la API de Power BI.
+
 ## Referencias
 - [Documentación de Power BI REST API](https://learn.microsoft.com/en-us/rest/api/power-bi/)
 - [Power BI Playground](https://playground.powerbi.com/)
