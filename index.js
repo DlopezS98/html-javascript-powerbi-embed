@@ -1,10 +1,8 @@
 import environment from "./environment.mjs";
 
-const models = window['powerbi-client'].models;
-
 const config = {
     type: 'report',
-    tokenType: models.TokenType.Embed,
+    tokenType: environment.TOKEN_TYPE,
     accessToken: environment.ACCESS_TOKEN,
     embedUrl: environment.EMBED_URL,
     id: environment.REPORT_ID,
