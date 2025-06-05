@@ -6,7 +6,7 @@ const config = {
     accessToken: environment.ACCESS_TOKEN,
     embedUrl: environment.EMBED_URL,
     id: environment.REPORT_ID,
-    permissions: models.Permissions.All,
+    permissions: environment.PERMISSIONS,
     settings: {
         panes: {
             filters: {
@@ -27,7 +27,6 @@ const config = {
 const embedContainer = document.getElementById('powerbi-report-container');
 report = powerbi.embed(embedContainer, config);
 // Embed the report and display it within the div container.
-report = powerbi.embed(embedContainer, config);
 
 // report.off removes all event handlers for a specific event
 report.off("loaded");
